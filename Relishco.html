@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relish Co - Premium Hibiscus & Tea Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <h1 class="logo-text">RelishCo</h1>
+                    <p class="logo-subtitle">Premium Tea & Hibiscus Specialties</p>
+                </div>
+            </div>
+            
+ <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+ <!-- Hero Section -->
+ <section class="hero" id="home">
+   <div class="container">
+    <div class="hero-content">
+      <h2>Homemade premium tea blends, signature drinks & more. All shelf-stable, small-batch, and crafted with the finest ingredients for quality and flavor</h2>
+       <p>Relish Co brings you the finest selection of herbal teas, jams, and drinks made from premium hibiscus and other natural ingredients. Each product is crafted with care to deliver exceptional flavor and health benefits.</p>
+                <a href="#products" class="cta-button">Shop Our Collection</a>
+            </div>
+        </div>
+    </section>
+  <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Premium Products</h2>
+            <p class="section-subtitle">All products are made from natural ingredients with no artificial additives</p>
+            
+   <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Hibiscus Tea</h3>
+                    <p>Rich in antioxidants, our hibiscus tea offers a refreshing tart flavor with floral notes. Perfect hot or iced.</p>
+                    <div class="price">₦<span class="price-amount">3,500</span></div>
+                    <button class="order-btn" data-product="Hibiscus Tea" data-price="3500">Add to Cart</button>
+                    <img src="" alt="Hibiscus Tea">
+                </div>
+                   <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Lemongrass Ginger Tea</h3>
+                    <p>A soothing blend of zesty lemongrass and warming ginger to invigorate your senses and support digestion.</p>
+                    <div class="price">₦<span class="price-amount">3,500</span></div>
+                    <button class="order-btn" data-product="Lemongrass Ginger Tea" data-price="3500">Add to Cart</button>
+                </div>
+                     <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <h3>Hibiscus Jam</h3>
+                    <p>Sweet and tangy hibiscus jam, perfect for toast, pastries, or as a glaze. Made with natural ingredients.</p>
+                    <div class="price">₦<span class="price-amount">3,800</span></div>
+                    <button class="order-btn" data-product="Hibiscus Jam" data-price="3800">Add to Cart</button>
+                </div>
+                   <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <h3>Hibiscus Drink (Zobo)</h3>
+                    <p>Traditional Nigerian zobo drink made from hibiscus flowers. Refreshing, sweet, and packed with care .</p>
+                    <div class="price">₦<span class="price-amount">1,000</span></div>
+                    <button class="order-btn" data-product="Hibiscus Drink (Zobo)" data-price="1000">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Relish Co</h2>
+                <p>Founded with a passion for natural wellness, Relish Co specializes in creating premium hibiscus-based products that combine traditional recipes with modern quality standards.</p>
+                <p>Homemade premium tea blends, signature drinks & more. All shelf-stable, small-batch, and crafted with the finest ingredients for quality and flavor.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-seedling"></i>
+                        <h4>100% Natural</h4>
+                        <p>No artificial additives or preservatives</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h4>Health Benefits</h4>
+                        <p>Rich in antioxidants and vitamins</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <h4>Premium Quality</h4>
+                        <p>Carefully sourced and crafted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here by JavaScript -->
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                <h4>Total: <span id="cartTotal">₦0</span></h4>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+      <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Relish Co</h3>
+                    <p>Premium Tea & Hibiscus Products</p>
+                </div>
+                
+   <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kano, Nigeria</p>
+                    <p><i class="fas fa-envelope"></i> info@relishco.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri:24/7</p>
+                </div>
+                
+                     
+   <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p class="newsletter-text">Subscribe to our newsletter for updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+  <div class="copyright">
+                <p>&copy; 2025 Relish Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+ <!-- Cart Icon -->
+    <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
